@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+.body h1 {
+  text-align: center; /* Centraliza o texto */
+  font-family: 'Kanit', sans-serif; /* Aplica a fonte Kanit */
+  font-weight: 400; /* Define o peso da fonte */
+  font-size: 2.5em; /* Define o tamanho da fonte */
+  color: #7b68a5; /* Adiciona a cor roxa */
+}
+.app-container {
+  display: flex;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.address-list-container, .address-form-container {
+  flex: 1;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .address-list-container, .address-form-container {
+    margin: 10px 0;
+  }
+}
